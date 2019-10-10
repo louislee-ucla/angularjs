@@ -18,9 +18,10 @@
              class="form-control" ng-model="LunchMenu">
          </div>
          <div class="form-group">
+           <!-- Empty item not counted! -->
              <button class="btn btn-default" ng-click="checkLunchMenu()">Check If Too Much</button>
          </div>
-         <div class="form-group message">
+         <div class="form-group message" style="border: {{ BorderWidth}} solid {{ BorderColor }};color:{{ MsgColor }};">
            {{ LunchMessage }}
            <!-- Your message can go here. -->
          </div>
