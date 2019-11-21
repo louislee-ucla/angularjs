@@ -1,0 +1,8 @@
+<h3>List of Menu Categories</h3>
+<ul>
+  <li ng-repeat="item in search.found">
+    {{ item.name }}
+    <button class="btn btn-warning" ng-click="search.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+  <span ng-hide="search.found == null || search.found.length">Nothing found</span>
+</ul>
