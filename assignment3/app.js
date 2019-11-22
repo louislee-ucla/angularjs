@@ -12,9 +12,10 @@
         var ddo = {
             templateUrl: 'foundItems.html',
             scope: {
-                found: '<foundItemsAttr',
+                found: '<foundItems',
                 onRemove: '&'
             },
+            restrict: 'E',
             controller: FoundItemsDirectiveController,
             controllerAs: 'search',
             bindToController: true
